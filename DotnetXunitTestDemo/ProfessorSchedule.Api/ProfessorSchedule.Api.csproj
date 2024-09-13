@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProfessorScheduleLib\ProfessorScheduleLib.csproj" />
-    <ProjectReference Include="..\ProfessorScheduleLib.Tests\ProfessorScheduleLib.tests.csproj" />
   </ItemGroup>
 
 </Project>

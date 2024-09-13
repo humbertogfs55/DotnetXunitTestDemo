@@ -24,11 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProfessorScheduleLib\ProfessorScheduleLib.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Fixtures\" />
-    <Folder Include="ProfessorScheduleLib.tests\" />
+    <ProjectReference Include="..\ProfessorSchedule.Api\ProfessorSchedule.Api.csproj" />
   </ItemGroup>
 
 </Project>
