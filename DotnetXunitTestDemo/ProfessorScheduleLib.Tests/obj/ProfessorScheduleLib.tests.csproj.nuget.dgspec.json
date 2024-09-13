@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.tests.csproj": {}
+    "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.tests.csproj": {
+    "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorSchedule.Api\\ProfessorSchedule.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.tests.csproj",
-        "projectName": "ProfessorScheduleLib.tests",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.tests.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorSchedule.Api\\ProfessorSchedule.Api.csproj",
+        "projectName": "ProfessorSchedule.Api",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorSchedule.Api\\ProfessorSchedule.Api.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorSchedule.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,6 +47,84 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.Tests.csproj",
+        "projectName": "ProfessorScheduleLib.Tests",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.Tests.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorSchedule.Api\\ProfessorSchedule.Api.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorSchedule.Api\\ProfessorSchedule.Api.csproj"
+              },
+              "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib\\ProfessorScheduleLib.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib\\ProfessorScheduleLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
             "Bogus": {
               "target": "Package",
               "version": "[35.6.1, )"
@@ -55,13 +133,17 @@
               "target": "Package",
               "version": "[17.8.0, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[2.9.0, )"
             },
             "xunit.runner.visualstudio": {
               "target": "Package",

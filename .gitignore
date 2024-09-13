@@ -1,0 +1,51 @@
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]eleases/
+[Rr]eleasesPublic/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]eleases/
+[Rr]eleasesPublic/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.dbmdl
+*.bak
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuget/
+*.nupkg/
+*.snupkg/
+*.pkg/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.suo
+*.vscode/
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Sensitive data
+appsettings.Development.json
+appsettings.Production.json
+
+# Others
+*.tmp
+*.swp
+*.log

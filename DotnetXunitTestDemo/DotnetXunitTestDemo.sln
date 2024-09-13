@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessorScheduleLib", "Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessorScheduleLib.tests", "ProfessorScheduleLib.Tests\ProfessorScheduleLib.tests.csproj", "{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessorSchedule.Api", "ProfessorSchedule.Api\ProfessorSchedule.Api.csproj", "{83362519-8AD0-4D8E-A0EC-3D0526D652ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83362519-8AD0-4D8E-A0EC-3D0526D652ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83362519-8AD0-4D8E-A0EC-3D0526D652ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83362519-8AD0-4D8E-A0EC-3D0526D652ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83362519-8AD0-4D8E-A0EC-3D0526D652ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

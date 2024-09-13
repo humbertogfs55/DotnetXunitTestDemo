@@ -1,0 +1,6 @@
+@ProfessorSchedule.Api_HostAddress = http://localhost:5139
+
+GET {{ProfessorSchedule.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
