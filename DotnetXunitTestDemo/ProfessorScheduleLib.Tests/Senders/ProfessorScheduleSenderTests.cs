@@ -6,6 +6,7 @@ using ProfessorScheduleLib.Models;
 using ProfessorScheduleLib.Senders;
 using ProfessorScheduleLib.Services;
 using System.Globalization;
+using Castle.Components.DictionaryAdapter;
 
 namespace ProfessorScheduleLib.tests.Senders;
 
@@ -194,39 +195,194 @@ public class ProfessorScheduleSenderTests
     }
 
     #endregion
+    #region Falure Tests
     [Fact]
-    public void SendProfessorSchedule_ShouldNotReturnProfessorSchedule()
+    public void SendProfessorSchedule_ShouldHandleInvalidScheduleFormat()
     {
         // Arrange:
-        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(false);
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
         _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
                                      .Returns(fakeProfessorSchedule);
 
         // Act: 
         var result = _sender.SendGetProfessorSchedule();
 
-        // Assert: 
-        Assert.Null(result);
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+        DateTime parsedDate;
+        Assert.False(DateTime.TryParseExact(returnedValue.Schedule, "MMMM dd, yyyy",
+                                             CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate));
+    }
+    [Fact]
+    public void SendProfessorSchedule_ShouldHandleInvalidPeriod()
+    {
+        // Arrange:
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
+        _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
+                                     .Returns(fakeProfessorSchedule);
+
+        // Act: 
+        var result = _sender.SendGetProfessorSchedule();
+
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+        Assert.DoesNotContain(returnedValue.Period, new[] { "Integral", "Noturno" });
+    }
+    [Fact]
+    public void SendProfessorSchedule_ShouldHandleNonNumericRoom()
+    {
+        // Arrange:
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
+        _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
+                                     .Returns(fakeProfessorSchedule);
+
+        // Act: 
+        var result = _sender.SendGetProfessorSchedule();
+
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+        Assert.False(int.TryParse(returnedValue.Room, out _));
+    }
+    [Fact]
+    public void SendProfessorSchedule_ShouldHandleInvalidBuildingNumbers()
+    {
+        // Arrange:
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
+        _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
+                                     .Returns(fakeProfessorSchedule);
+
+        // Act: 
+        var result = _sender.SendGetProfessorSchedule();
+
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+        Assert.All(returnedValue.Building, building => Assert.InRange(building, 100, 400));
+    }
+    [Fact]
+    public void SendProfessorSchedule_ShouldHandleEmptyBuildingList()
+    {
+        // Arrange:
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
+        _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
+                                     .Returns(fakeProfessorSchedule);
+
+        fakeProfessorSchedule.Building = new List<int>();
+
+        // Act: 
+        var result = _sender.SendGetProfessorSchedule();
+
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+        Assert.Empty(returnedValue.Building);
+    }
+    [Fact]
+    public void SendProfessorSchedule_ShouldHandleNullPredioList()
+    {
+        // Arrange:
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
+        _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
+                                     .Returns(fakeProfessorSchedule);
+
+        fakeProfessorSchedule.Building = null;
+        // Act: 
+        var result = _sender.SendGetProfessorSchedule();
+
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+        Assert.Null(returnedValue.Building);
+    }
+    [Fact]
+    public void SendProfessorSchedule_ShouldHandleRoomOutOfRange()
+    {
+        // Arrange:
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
+        _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
+                                     .Returns(fakeProfessorSchedule);
+
+        // Act: 
+        var result = _sender.SendGetProfessorSchedule();
+
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+        Assert.True(!int.TryParse(returnedValue.Room, out var room) || room < 1 || room > 25);
+    }
+    [Fact]
+    public void SendProfessorSchedule_ShouldHandleMissingProfessorName()
+    {
+        // Arrange:
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
+        _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
+                                     .Returns(fakeProfessorSchedule);
+        fakeProfessorSchedule.ProfessorName = null;
+
+        // Act: 
+        var result = _sender.SendGetProfessorSchedule();
+
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+        Assert.Null(returnedValue.ProfessorName);
+    }
+    [Fact]
+    public void SendProfessorSchedule_ShouldHandleInvalidPeriodValue()
+    {
+        // Arrange:
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
+        _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
+                                     .Returns(fakeProfessorSchedule);
+
+        // Act: 
+        var result = _sender.SendGetProfessorSchedule();
+
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+
+        // Periodo should not be "Integral" or "Noturno"
+        Assert.False(returnedValue.Period == "Integral" || returnedValue.Period == "Noturno");
+    }
+    [Fact]
+    public void SendProfessorSchedule_ShouldHandleMissingPeriodo()
+    {
+        // Arrange:
+        var fakeProfessorSchedule = GenerateFakeProfessorSchedule(happy: false);
+        _mockProfessorScheduleService.Setup(service => service.GetProfessorSchedule())
+                                     .Returns(fakeProfessorSchedule);
+        fakeProfessorSchedule.Period = string.Empty;
+        // Act: 
+        var result = _sender.SendGetProfessorSchedule();
+
+        // Assert:
+        var returnedValue = Assert.IsType<ProfessorScheduleModel>(result);
+
+        // Periodo should fail on empty
+        Assert.True(string.IsNullOrWhiteSpace(returnedValue.Period));
     }
 
+    #endregion
     // Helper method to generate a fake ProfessorScheduleModel using Bogus
     private ProfessorScheduleModel? GenerateFakeProfessorSchedule(bool happy = true)
     {
-        var faker = new Faker<ProfessorScheduleModel>()
+        var faker = new Faker<ProfessorScheduleModel>();
+
+        if (happy)
+        {
+            faker
             .RuleFor(p => p.ProfessorName, f => f.Name.FullName())
             .RuleFor(p => p.Schedule, f => f.Date.FutureOffset().ToString("MMMM dd, yyyy"))
             .RuleFor(p => p.Period, f => f.Random.Bool() ? "Integral" : "Noturno")
             .RuleFor(p => p.Room, f => f.Random.Int(1, 25).ToString())
             .RuleFor(p => p.Building, (f, p) => GetBuildingBasedOnRoom(p.Room, f));
-
-        if (happy)
-        {
-            return faker.Generate();
         }
         else
         {
-            return null;
+
+            faker
+                .RuleFor(p => p.ProfessorName, f => f.Lorem.Sentence())
+                .RuleFor(p => p.Schedule, f => f.Random.String2(10))
+                .RuleFor(p => p.Period, f => f.Lorem.Word())
+                .RuleFor(p => p.Room, f => f.Random.String2(5))
+                .RuleFor(p => p.Building, f => new List<int> { f.Random.Int(100, 200), f.Random.Int(300, 400) });
         }
+        return faker.Generate();
     }
 
     private static List<int> GetBuildingBasedOnRoom(string room, Faker f)

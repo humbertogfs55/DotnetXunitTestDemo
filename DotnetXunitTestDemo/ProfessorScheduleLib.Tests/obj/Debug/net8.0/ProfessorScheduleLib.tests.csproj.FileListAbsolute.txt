@@ -110,9 +110,9 @@ C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\
 C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\ProfessorScheduleLib.tests.AssemblyInfo.cs
 C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\ProfessorScheduleLib.tests.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\ProfessorScheduleLib.tests.sourcelink.json
-C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\Professo.E22473FD.Up2Date
 C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\ProfessorScheduleLib.tests.dll
 C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\refint\ProfessorScheduleLib.tests.dll
 C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\ProfessorScheduleLib.tests.pdb
 C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\ProfessorScheduleLib.tests.genruntimeconfig.cache
 C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\ref\ProfessorScheduleLib.tests.dll
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib.Tests\obj\Debug\net8.0\Professo.6644744C.Up2Date

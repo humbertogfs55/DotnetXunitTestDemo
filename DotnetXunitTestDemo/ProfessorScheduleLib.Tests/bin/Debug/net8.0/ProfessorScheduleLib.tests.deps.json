@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "ProfessorScheduleLib.tests/1.0.0": {
+      "ProfessorScheduleLib.Tests/1.0.0": {
         "dependencies": {
           "Bogus": "35.6.1",
           "Microsoft.NET.Test.Sdk": "17.8.0",
@@ -18,7 +18,7 @@
           "xunit.runner.visualstudio": "2.5.3"
         },
         "runtime": {
-          "ProfessorScheduleLib.tests.dll": {}
+          "ProfessorScheduleLib.Tests.dll": {}
         }
       },
       "Bogus/35.6.1": {
@@ -466,7 +466,7 @@
     }
   },
   "libraries": {
-    "ProfessorScheduleLib.tests/1.0.0": {
+    "ProfessorScheduleLib.Tests/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
