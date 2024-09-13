@@ -2,9 +2,9 @@ namespace ProfessorScheduleLib.Models;
 
 public class ProfessorScheduleModel
 {
-    public string NomeDoProfessor { get; set; } = string.Empty;
-    public string HorarioDeAtendimento { get; set; } = string.Empty;
-    public string Periodo { get; set; } = string.Empty;
-    public string Sala { get; set; } = string.Empty;
-    public List<int> Predio { get; set; } = new List<int>();
+    public string ProfessorName { get; set; } = string.Empty;
+    public string Schedule { get; set; } = string.Empty;
+    public string Period { get; set; } = string.Empty;
+    public string Room { get; set; } = string.Empty;
+    public List<int> Building { get; set; } = new List<int>();
 }

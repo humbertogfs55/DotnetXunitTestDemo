@@ -15,4 +15,8 @@ public class ProfessorScheduleSender
     public ProfessorScheduleModel SendGetProfessorSchedule(){
         return _professorScheduleService.GetProfessorSchedule();
     }
+
+    public ProfessorScheduleModel SendGetProfessorByName(){
+        return _professorScheduleService.GetProfessorByName("someGr8guy");
+    }
 }
