@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessorScheduleLib", "ProfessorScheduleLib\ProfessorScheduleLib.csproj", "{3D4B77BE-DB4F-493A-983E-8F3E02054656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessorScheduleLib.tests", "ProfessorScheduleLib.Tests\ProfessorScheduleLib.tests.csproj", "{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D4B77BE-DB4F-493A-983E-8F3E02054656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4B77BE-DB4F-493A-983E-8F3E02054656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4B77BE-DB4F-493A-983E-8F3E02054656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4B77BE-DB4F-493A-983E-8F3E02054656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
