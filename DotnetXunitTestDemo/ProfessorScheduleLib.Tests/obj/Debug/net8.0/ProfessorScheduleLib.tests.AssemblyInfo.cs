@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProfessorScheduleLib.tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bacb73c05ad9c3fe185b55e650156e510006f1d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d905a99d4f87c5f10b6956b480dc3f01b5c70ad2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProfessorScheduleLib.tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProfessorScheduleLib.tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

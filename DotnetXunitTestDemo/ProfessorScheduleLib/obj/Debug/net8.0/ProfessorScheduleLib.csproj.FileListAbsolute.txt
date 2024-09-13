@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\bin\Debug\net8.0\ProfessorScheduleLib.deps.json
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\bin\Debug\net8.0\ProfessorScheduleLib.dll
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\bin\Debug\net8.0\ProfessorScheduleLib.pdb
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\obj\Debug\net8.0\ProfessorScheduleLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\obj\Debug\net8.0\ProfessorScheduleLib.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\obj\Debug\net8.0\ProfessorScheduleLib.AssemblyInfo.cs
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\obj\Debug\net8.0\ProfessorScheduleLib.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\obj\Debug\net8.0\ProfessorScheduleLib.sourcelink.json
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\obj\Debug\net8.0\ProfessorScheduleLib.dll
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\obj\Debug\net8.0\refint\ProfessorScheduleLib.dll
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\obj\Debug\net8.0\ProfessorScheduleLib.pdb
+C:\Users\Administrator\Documents\Vault\University\C214\Code\DotnetXunitTestDemo\DotnetXunitTestDemo\ProfessorScheduleLib\obj\Debug\net8.0\ref\ProfessorScheduleLib.dll

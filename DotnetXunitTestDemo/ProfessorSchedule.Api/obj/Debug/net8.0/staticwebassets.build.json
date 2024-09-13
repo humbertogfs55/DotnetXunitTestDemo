@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NET7Vg3BuNESHLSfWbMv8isDsNMItNCNXKSWHqCRFlw=",
+  "Source": "ProfessorSchedule.Api",
+  "BasePath": "_content/ProfessorSchedule.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
