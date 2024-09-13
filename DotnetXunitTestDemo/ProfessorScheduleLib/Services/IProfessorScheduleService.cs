@@ -4,5 +4,5 @@ namespace ProfessorScheduleLib.Services;
 
 public interface IProfessorScheduleService
 {
-    ProfessorScheduleModel GetProfessorScheduleModel();
+    ProfessorScheduleModel GetProfessorSchedule();
 }
