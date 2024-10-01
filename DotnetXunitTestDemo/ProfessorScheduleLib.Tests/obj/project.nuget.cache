@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3IzCl5BQLh8=",
+  "dgSpecHash": "PMxnMKIEgj8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\bogus\\35.6.1\\bogus.35.6.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
