@@ -3,15 +3,15 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
+# Ignore all Debug and Release folders recursively, in any location
+**/[Dd]ebug/
+**/[Rr]elease/
+
+# Ignore bin and obj folders recursively
+[Bb]in/
+[Oo]bj/
+
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]eleases/
-[Rr]eleasesPublic/
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]eleases/
-[Rr]eleasesPublic/
 *.dll
 *.exe
 *.pdb
