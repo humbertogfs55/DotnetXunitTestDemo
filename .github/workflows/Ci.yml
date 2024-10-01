@@ -14,53 +14,51 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Checkout the code
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # Step 2: Setup .NET Core
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 8.0.x # Specify your .NET Core version here
-    
-      # Clear NuGet cache
+        dotnet-version: 8.0.x
+
+    # Clear NuGet cache
     - name: Clear NuGet Cache
       run: dotnet nuget locals all --clear
-  
 
-    # Step 3: Restore dependencies
+    # Restore dependencies
     - name: Restore dependencies
-      run: dotnet restore DotnetXunitTestDemo/DotnetXunitTestDemo.sln
+      run: dotnet restore DotnetXunitTestDemo/DotnetXunitTestDemo.sln --source "https://api.nuget.org/v3/index.json"
 
-    # Step 4: Run tests
+    # Run Tests
     - name: Run Tests
       run: dotnet test DotnetXunitTestDemo/DotnetXunitTestDemo.sln --no-restore --verbosity normal
 
   build:
     runs-on: ubuntu-latest
-    needs: test  # This job will only run if the test job succeeds
+    needs: test
 
     steps:
-    # Step 1: Checkout the code
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # Step 2: Setup .NET Core
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 8.0.x # Specify your .NET Core version here
+        dotnet-version: 8.0.x
 
-    # Step 3: Build the application
+    - name: Clear NuGet Cache
+      run: dotnet nuget locals all --clear
+
+    - name: Restore dependencies
+      run: dotnet restore DotnetXunitTestDemo/DotnetXunitTestDemo.sln --source "https://api.nuget.org/v3/index.json"
+
     - name: Build
       run: dotnet build DotnetXunitTestDemo/DotnetXunitTestDemo.sln --configuration Release --no-restore
 
-    # Step 4: Publish build artifacts
     - name: Publish Artifact
       run: dotnet publish DotnetXunitTestDemo/DotnetXunitTestDemo.sln -c Release -o ./output
 
-    # Step 5: Upload build artifact
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
