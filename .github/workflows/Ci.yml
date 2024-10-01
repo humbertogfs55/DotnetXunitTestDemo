@@ -10,8 +10,30 @@ on:
       - main
 
 jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Set execute permissions for the shell script
+    - name: Set execute permissions for the shell script
+      run: chmod +x send_email_notification.sh
+
+    # Install sendmail utility
+    - name: Install sendmail
+      run: sudo apt-get install -y sendmail
+
+    # Run the shell script to send an email
+    - name: Send email notification
+      run: ./send_email_notification.sh ${{ secrets.TO_EMAIL }}
+      env:
+        TO_EMAIL: ${{ secrets.TO_EMAIL }}
+
   test:
     runs-on: ubuntu-latest
+    needs: notify
 
     steps:
     - name: Checkout code
