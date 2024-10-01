@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessorScheduleLib", "ProfessorScheduleLib\ProfessorScheduleLib.csproj", "{3D4B77BE-DB4F-493A-983E-8F3E02054656}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessorScheduleLib.tests", "ProfessorScheduleLib.Tests\ProfessorScheduleLib.tests.csproj", "{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessorScheduleLib.Tests", "ProfessorScheduleLib.Tests\ProfessorScheduleLib.Tests.csproj", "{B4AACE91-DEA6-4B8C-A445-142B1A0D183D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessorSchedule.Api", "ProfessorSchedule.Api\ProfessorSchedule.Api.csproj", "{83362519-8AD0-4D8E-A0EC-3D0526D652ED}"
 EndProject
