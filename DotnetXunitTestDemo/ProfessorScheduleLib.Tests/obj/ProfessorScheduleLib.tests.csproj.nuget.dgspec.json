@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.Tests.csproj": {}
+    "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.tests.csproj": {}
   },
   "projects": {
     "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorSchedule.Api\\ProfessorSchedule.Api.csproj": {
@@ -79,12 +79,12 @@
         }
       }
     },
-    "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.Tests.csproj": {
+    "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.Tests.csproj",
-        "projectName": "ProfessorScheduleLib.Tests",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.tests.csproj",
+        "projectName": "ProfessorScheduleLib.tests",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\ProfessorScheduleLib.tests.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Administrator\\Documents\\Vault\\University\\C214\\Code\\DotnetXunitTestDemo\\DotnetXunitTestDemo\\ProfessorScheduleLib.Tests\\obj\\",
         "projectStyle": "PackageReference",
