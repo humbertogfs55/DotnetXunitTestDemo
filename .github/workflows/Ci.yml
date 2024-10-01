@@ -23,6 +23,11 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x # Specify your .NET Core version here
+    
+      # Clear NuGet cache
+    - name: Clear NuGet Cache
+      run: dotnet nuget locals all --clear
+  
 
     # Step 3: Restore dependencies
     - name: Restore dependencies
